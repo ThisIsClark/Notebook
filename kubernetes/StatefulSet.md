@@ -1,10 +1,10 @@
-#StatefulSet控制器
+# StatefulSet控制器
 
-##StatefulSet概述
+## StatefulSet概述
 
 ReplicaSet控制器可用来管控无状态应用，例如提供静态内容服务的Web服务器程序等，而对于有状态应用的管控，则是另一项专用控制器的任务——StatefulSet。
 
-###Stateful应用和Stateless应用
+### Stateful应用和Stateless应用
 
 应用程序与用户、设备、其他应用程序或外部组件进行通信时，根据其是否需要记录前一次或多次通信中的相关事件信息作为下一次通信的分类标准，可以将那些需要记录信息的应用程序称为有状态（stateful）应用，而无须记录的则称为无状态应用。
 下面我们先来了解下状态和存储的关系。

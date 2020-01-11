@@ -1,7 +1,9 @@
 #DaemonSet控制器
+
 DaemonSet是Pod控制器的又一种实现，用于在集群的全部节点上同时运行一份指定的Pod资源副本，后续新加入集群的工作节点也会自动创建一个相关的Pod对象，当从集群移除节点时，此类Pod对象也将被自动回收而无须重建。
 管理员也可以使用节点选择器及节点标签指定仅在部分具有特定特征的节点上运行指定的Pod对象。
 DaemonSet是一种特殊的控制器，它有特定的应用场景，通常运行那些执行系统级操作任务的应用，其应用场景具体如下：
+
 - 运行集群存储的守护进程，如在各个节点上运行glusterd或ceph。
 - 在各个节点上运行日志收集守护进程，如fluentd和logstash。
 - 在各个节点上运行监控系统的代理守护进程，如Prometheus Node Exporter、collectd、Datadog agent、New Relic agent或Ganglia gmond等。
